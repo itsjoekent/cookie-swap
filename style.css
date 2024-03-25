@@ -197,6 +197,10 @@ a:hover::after {
   transform: translateY(4px);
 }
 
+.logo::after {
+  display: none;
+}
+
 .content {
   display: flex;
   flex-direction: column;
@@ -375,6 +379,11 @@ footer p {
 
 footer a {
   color: var(--black);
+  text-decoration: underline;
+}
+
+footer a::after {
+  display: none;
 }
 
 .cookie-banner {
