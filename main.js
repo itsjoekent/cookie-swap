@@ -1,7 +1,15 @@
 import './style.css'
 
+const storageKey = 'cookie-banner-accepted';
+
+if (!sessionStorage.getItem(storageKey)) {
+  document.querySelector('.cookie-banner').style.display = 'block';
+  setTimeout(() => document.querySelector('.cookie-banner').style.opacity = 1, 2000);
+}
+
 document.querySelector('#accept-cookies').addEventListener('click', () => {
   document.querySelector('.cookie-banner').style.display = 'none';
+  sessionStorage.setItem(storageKey, 'accepted');
 });
 
 const countdownText = document.querySelector('#countdown p');

@@ -32,21 +32,15 @@
     <div class="content">
       <nav>
         <a href="/">
-          <img src="/logo-small.png" />
+          <img style="width: 48px" src="/logo.png" />
         </a>
         <div class="nav-right">
-          <div class="nav-item">
-            <a href="https://www.instagram.com/worldslargestcookieswap/">
-              Instagram
-            </a>
-            <img src="/underline-1.png" />
-          </div>
-          <div class="nav-item">
-            <a href="#faq">
-              FAQ
-            </a>
-            <img src="/underline-1.png" />
-          </div>
+          <a href="https://www.instagram.com/worldslargestcookieswap">
+            Instagram
+          </a>
+          <a href="#faq">
+            FAQ
+          </a>
         </div>
       </nav>
       <main>
@@ -65,15 +59,62 @@
           <div class="faq-item">
             <h3>What is the World's Largest Cookie Swap?</h3>
             <p>
-              The World's Largest Cookie Swap is a gathering of cookie enthusiasts from around the world. We come together to share our love of cookies and to swap our favorite recipes.
+              Cookies are better when shared with new friends. We're a friend group who loves chocolate chip cookies and are excited to try new recipes and meet other cookie enthusiasts - all while raising awareness for organizations combating food insecurity in NYC.
             </p>
           </div>
           <div class="faq-item">
-            <h3>What is the World's Largest Cookie Swap?</h3>
+            <h3>When and where?</h3>
             <p>
-              The World's Largest Cookie Swap is a gathering of cookie enthusiasts from around the world. We come together to
-              share our love of cookies and to swap our favorite recipes.
+              Mark your calendars: May 11th at 2pm. The location is TBA. If you know of fantastic (low-budget) venues, please reach out.
             </p>
+          </div>
+          <div class="faq-item">
+            <h3>Why are you doing this?</h3>
+            <p>
+              We're a group of friends excited by odd themed parties, new friends, and tasty cookies. Furthermore, food insecurity is <a href="https://www.nytimes.com/2024/02/21/nyregion/nyc-poverty.html">on the rise</a> in New York City and we are eager to support City Harvest, a stellar organization providing support for communities in need. We'd encourage you to donate to City Harvest via our Instagram fundraiser (so we can track donations!)
+            </p>
+          </div>
+          <div class="faq-item">
+            <h3>What type of cookies should I bring?</h3>
+            <p>
+              Up to you! You're welcome to be creative or stick with tried and true family recipes.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h3>How can I volunteer to help?</h3>
+            <p>
+              We need volunteers leading up to and day-of! If you are interested in joining our kick-ass-cookie-volunteer team, DM us at <a href="https://www.instagram.com/worldslargestcookieswap">@worldslargestcookieswap</a>.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h3>How are you dealing with food allergies?</h3>
+            <p>
+              We ask that, upon arrival, you write the type of cookie and potential allergens next to your assortment. We'll have sharpies and butcher paper. Please note, this is a potluck-style event and while we will require people to note allergens, we cannot guarantee that there will not be cross-contamination.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h3>The Usual Disclaimer:</h3>
+            <p>
+              Sorry - have to include a quick legal disclaimer.
+            </p>
+            <ul>
+              <li>
+                <p>Participation: Your participation in the World's Largest Cookie Swap is voluntary. By participating, you assume any and all risks associated with the event, including but not limited to personal injury, illness, damage to personal property, and food allergies.</p>
+              </li>
+              <li>
+                <p>Food Safety: While we encourage a spirit of community and sharing, we cannot guarantee the safety, quality, or dietary compliance of the cookies swapped at the event. Participants are responsible for communicating and inquiring about potential allergens or dietary restrictions.</p>
+              </li>
+              <li>
+                <p>Public Space Use: This event takes place in public parks around New York City. Participants are expected to respect the space, local laws, and all park rules and regulations. The event organizers are not responsible for actions taken by participants that violate these guidelines.</p>
+              </li>
+              <li>
+                <p>Liability: By attending the World's Largest Cookie Swap, participants agree to release and hold harmless the event organizers, sponsors, partners, and any of their employees or volunteers from any liability or claim that may arise from participation in the event.</p>
+              </li>
+              <li>
+                <p>Photography and Media: Please be aware that photography, filming, and recording may take place during the event. By participating, you consent to your image and likeness being used in promotional materials and media related to the event without compensation.</p>
+              </li>
+            </ul>
+            <p>Other questions? DM us at <a href="https://www.instagram.com/worldslargestcookieswap">@worldslargestcookieswap</a>!</p>
           </div>
         </div>
       </main>
@@ -81,15 +122,17 @@
     <footer>
       <p>© 2024 World's Largest Cookie Swap</p>
       <span>·</span>
-      <p>website crafted by <a href="https://joekent.com">Joe Kent</a></p>
+      <p>website baked by <a href="https://joekent.com">Joe Kent</a></p>
     </footer>
-    <div class="cookie-banner">
-      <div class="cookie-banner-text">
-        <p><strong>This website uses a lot of cookies.</strong></p>
-        <p>By clicking “Accept All Cookies” you agree to participate in the World’s Largest Cookie Swap by baking and exchanging
-          cookies. For more information see our “Cookie Policy” in the FAQ.</p>
+    <div class="cookie-banner" style="display:none; opacity: 0;">
+      <div class="cookie-banner-container">
+        <div class="cookie-banner-text">
+          <p><strong>This website LOVES cookies.</strong></p>
+          <p>By clicking “Accept All Cookies” you agree to participate in the World's Largest Cookie Swap by baking and
+            exchanging cookies.</p>
+        </div>
+        <button id="accept-cookies">Accept ALL the cookies</button>
       </div>
-      <button id="accept-cookies">Accept All Cookies</button>
     </div>
     <script type="module" src="/main.js"></script>
   </body>
