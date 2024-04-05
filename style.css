@@ -461,3 +461,29 @@ footer a::after {
   position: fixed;
   z-index: 1;
 }
+
+.cta {
+  margin-bottom: 6vh;
+}
+
+.cta::after {
+  display: none;
+}
+
+.cta button {
+  display: block;
+  padding: 12px 16px;
+  font-weight: bold;
+  font-size: 2rem;
+  color: var(--black);
+  background-color: var(--dark-yellow);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 2px 4px 6px 1px rgb(0 0 0 / 8%);
+}
+
+.cta button:hover {
+  background-color: var(--black);
+  color: var(--white);
+}
