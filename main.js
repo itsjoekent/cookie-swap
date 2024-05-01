@@ -14,7 +14,8 @@ document.querySelector('#accept-cookies').addEventListener('click', () => {
 
 const countdownText = document.querySelector('#countdown p');
 function updateCountdown() {
-  const timeLeft = new Date('2024-05-11') - new Date();
+  const timeLeft = new Date('2024-05-11T14:00:00.000-04:00') - new Date();
+
 
   if (timeLeft <= 0) {
     countdownText.textContent = 'The Cookie Swap is happening!';
